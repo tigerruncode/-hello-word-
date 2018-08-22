@@ -1,0 +1,2 @@
+# -hello-word-
+inux下c语言编程，hello world都出错了，求指正。 在emacs下编写 #include &lt;stdio.h> int main() { printf(“Hello world!\n”); return 0; }  一运行gcc hello.c结果显示： hello.c: 在函数‘main’中:hello.c:3:1: 错误：程序中有游离的‘\342’ hello.c:3:1: 错误：程序中有游离的‘\200’ hello.c:3:1: 错误：程序中有游离的‘\234’ hello.c:3:12: 错误：‘Hello’未声明(在此函数内第一次使用) hello.c:3:12: 附注：每个未声明的标识符在其出现的函数内只报告一次 hello.c:3:18: 错误：expected ‘)’ before ‘world’ hello.c:3:18: 错误：程序中有游离的‘\’hello.c:3:18: 错误：程序中有游离的‘\342’ hello.c:3:18: 错误：程序中有游离的‘\200’hello.c:3:18: 错误：程序中有游离的‘\235’  到底哪出了问题？
